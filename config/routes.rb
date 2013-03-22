@@ -1,6 +1,5 @@
 GifOfTheMagiRails::Application.routes.draw do
 
-  resources :gifs
   resources :retrieve
   get "retrieve/index"
 
