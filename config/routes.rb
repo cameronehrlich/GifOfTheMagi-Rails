@@ -1,8 +1,16 @@
 GifOfTheMagiRails::Application.routes.draw do
 
+  get "process/update"
+
+  get "process/index"
+  get "process/scrape"
+  get "process/feed"
+  get "process/update"
+  resources :process
+
+
   resources :retrieve
   get "retrieve/index"
-
   get "home/index"
 
   # The priority is based upon order of creation:

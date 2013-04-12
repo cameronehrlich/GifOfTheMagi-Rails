@@ -1,0 +1,13 @@
+<h1>Process#feed</h1>
+	<a href="/process/">Back</a>
+	<a href="/process/update?operation=removeall">remove all</a>
+	<br /><br />
+	<% @images.each do |i| %>
+		<%= image_tag("#{i.image_url}", 
+			:height => 'auto', 
+			:width 	=> '300') %>
+		<br />
+		<a href='<%= "/process/update?operation=remove&id=#{i.id}" %>'>delete</a>
+		<br />
+		<br />
+	<% end %>
